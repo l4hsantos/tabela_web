@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Para Prova</title>
+</head>
+<body>
+    <script>
+        let pessoa = {
+            nome: 'Laís',
+            idade: 15,
+            endereco: {
+                logradouro: "Rua ABC",
+                numero: 15,
+                bairro: "Bairro Z"
+            }
+        }
+    
+    console.log(pessoa.nome);
+    console.log(pessoa['idade'])
+    console.log(pessoa.endereco.bairro);
+    console.log(pessoa["endereco"]["numero"])
+        function funcao(){
+            alert("Clicou!")
+        }
+
+        let funcao3 = function(a,b){
+            return a+b;
+        };
+        console.log(    funcao3(1,2) );
+
+
+
+    </script>
+
+    <button id="botao" onclick="funcao()">Ok</button>
+
+    <button id="funcao2" onclick="funcao2()">OK2</button>
+    <script src="externo.js">
+
